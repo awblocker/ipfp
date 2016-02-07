@@ -11,3 +11,4 @@ LazyLoad: yes
 URL: https://github.com/awblocker/ipfp
 Collate:
     'ipfp.R'
+RoxygenNote: 5.0.1
