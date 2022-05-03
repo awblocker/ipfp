@@ -1,4 +1,4 @@
-// Copyright 2012 Alexander W Blocker
+// Copyright 2022 Alexander W Blocker
 //    
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#define USE_FC_LEN_T
+
 #include <R.h>
 #include <Rinternals.h>
 #include <Rmath.h>
@@ -21,6 +23,10 @@
 #include <math.h>
 #include <assert.h>
 #include <stdlib.h>
+
+#ifndef FCONE
+# define FCONE
+#endif
 
 /* Function to calculate scalar product z = x * y */
 void vecProduct(int n, double * x, int incx, double * y, int incy,
