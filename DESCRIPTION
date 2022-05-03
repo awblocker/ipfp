@@ -1,11 +1,11 @@
 Package: ipfp
 Type: Package
 Title: Fast Implementation of the Iterative Proportional Fitting Procedure in C
-Version: 1.0.1
+Version: 1.0.2
 Author: Alexander W Blocker
 Maintainer: Alexander W Blocker <ablocker@gmail.com>
 Description: A fast (C) implementation of the iterative proportional fitting
-    procedure. Based on corresponding code from the networkTomography package.
+    procedure.
 License: Apache License (== 2.0)
 LazyLoad: yes
 URL: https://github.com/awblocker/ipfp
