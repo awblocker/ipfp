@@ -102,7 +102,7 @@ SEXP ipfp (SEXP y, SEXP A, SEXP dims, SEXP x,
     	alpha = 1;
     	beta = -1;
     	dgemv_(&notrans, &nrow, &ncol, &alpha, &REAL(A)[0], &nrow,
-    			&REAL(xx)[0], &incx, &beta, errVec, &incx);
+    			&REAL(xx)[0], &incx, &beta, errVec, &incx FCONE);
 
     	// Calculate L2 norm of err
     	errNorm = dnrm2_(&nrow, errVec, &incx);
