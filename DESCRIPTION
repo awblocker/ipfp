@@ -9,6 +9,4 @@ Description: A fast (C) implementation of the iterative proportional fitting
 License: Apache License (== 2.0)
 LazyLoad: yes
 URL: https://github.com/awblocker/ipfp
-Collate:
-    'ipfp.R'
 RoxygenNote: 7.1.2
