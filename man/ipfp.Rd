@@ -4,8 +4,15 @@
 \alias{ipfp}
 \title{Function to run IPFP (iterative proportional fitting procedure)}
 \usage{
-ipfp(y, A, x0, tol = sqrt(.Machine$double.eps), maxit = 1000,
-  verbose = FALSE, full = FALSE)
+ipfp(
+  y,
+  A,
+  x0,
+  tol = sqrt(.Machine$double.eps),
+  maxit = 1000,
+  verbose = FALSE,
+  full = FALSE
+)
 }
 \arguments{
 \item{y}{numeric constraint vector (length nrow)}
@@ -43,4 +50,3 @@ print(x)
 }
 \keyword{array}
 \keyword{iteration}
-
