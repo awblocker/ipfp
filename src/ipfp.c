@@ -156,3 +156,9 @@ SEXP ipfp (SEXP y, SEXP A, SEXP dims, SEXP x,
     // Return list
     return(ans);
 }
+
+void R_init_ipfp(DllInfo *info) {
+  R_registerRoutines(info, NULL, NULL, NULL, NULL);
+  R_useDynamicSymbols(info, TRUE);
+  R_RegisterCCallable("ipfp", "ipfp", (DL_FUNC) &ipfp);
+}
